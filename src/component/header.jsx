@@ -1,5 +1,6 @@
 export default function Header() {
   return (
+    <>
     <header>
       <h1>Math Matrix</h1>
       <ul>
@@ -9,5 +10,7 @@ export default function Header() {
         <li>start</li>
       </ul>
     </header>
+    <hr />
+    </>
   );
 }
