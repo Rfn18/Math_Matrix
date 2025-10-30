@@ -1,0 +1,159 @@
+
+    
+    .container-about {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6ff;
+      color: #333;
+    }
+
+   
+    .about-header {
+      background: linear-gradient(135deg, #191b75, #454bff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+      animation: spin 10s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .about-header h1 {
+      font-size: 3em;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+      letter-spacing: 1px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .about-header p {
+      font-size: 1.2em;
+      color: #e0e0ff;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+ 
+    .container {
+      width: 85%;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    .about, .team {
+      background: white;
+      margin-bottom: 20px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h2, .team h2 {
+      color: #191b75;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .team .members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .team .member {
+      text-align: center;
+      background-color: #f9f9ff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 200px;
+    }
+
+    .team .member:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .team .member img {
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .team .member h3 {
+      color: #191b75;
+      margin-top: 5px;
+    }
+
+   
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #191b75;
+      color: white;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .social-links a img {
+      width: 28px;
+      height: 28px;
+      filter: brightness(0) invert(1);
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }

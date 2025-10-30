@@ -10,17 +10,19 @@ import {
 } from "react-router-dom";
 import Soal1 from "./page/latihan1/soal_latihan1.jsx";
 import Pembahasan1 from "./page/latihan1/pembahasan_latihan1.jsx";
+import About from "./component/about.jsx";
 
 const AppRoutes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
+  },{
+    path: "/about",
+    element: <About />
+  },{
     path: "/soal-latihan1",
     element: <Soal1 />,
-  },
-  {
+  },{
     path: "/pembahasan-latihan1",
     element: <Pembahasan1 />,
   },
