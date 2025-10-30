@@ -18,7 +18,7 @@ body {
   );
   color: #fffff0;
   font-family: "Cormorant Garamond", serif;
-  width: 100dvw;
+  width: 100%;
   height: 100dvh;
 }
 
@@ -145,6 +145,11 @@ main .canvas {
   margin: 0.5em 0;
 }
 
+.soal-latihan3 h1 {
+  justify-self: center;
+  margin: 0.5em 0;
+}
+
 .container-soal1 {
   display: flex;
   width: 80%;
@@ -159,7 +164,7 @@ main .canvas {
 }
 
 .container-jawaban {
-  width: 50%;
+  width: auto;
   margin-top: 1em;
 }
 
@@ -190,12 +195,30 @@ main .canvas {
 }
 
 .soal1-footer {
+  position: absolute;
+  bottom: 0;
   width: 80%;
   height: 15dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+}
+
+.soal3-footer {
+  width: 80%;
+  height: 15dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+}
+
+.soal3-footer .pause-auto-speech {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 20px;
 }
 
 .soal1-footer .pause-auto-speech {
@@ -219,6 +242,75 @@ main .canvas {
   -o-border-radius: 20px;
 }
 
-.mathJax {
-  text-align: left;
+.soal-latihan3 button {
+  background-color: #5409da;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0.3em 2em;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container-pembahasan1 {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: center;
+  font-size: 18px;
+  width: 100%;
+  gap: 2em;
+}
+
+.step1-pembahasan1 {
+  border-right: 2px solid #ddd;
+}
+
+.step2-pembahasan1 {
+  border-right: 2px solid #ddd;
+}
+
+.step3-pembahasan1 img {
+  width: 100%;
+  margin-top: 1em;
+  background-blend-mode: multiply;
+  border: 10px solid #141f35;
+  box-shadow: 10px 15px 34px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.pembahasan1-footer {
+  position: absolute;
+  width: 80%;
+  height: 15dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  bottom: 0;
+}
+
+.pembahasan1-footer .pause-auto-speech {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 20px;
+}
+
+.pembahasan1-footer button {
+  background-color: #5409da;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0.3em 2em;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
