@@ -266,7 +266,9 @@ export default function Soal1() {
               </>
             )}
           </div>
-          <button>Next</button>
+          <button onClick={() => (location = "/pembahasan-latihan1")}>
+            Next
+          </button>
         </div>
       </div>
     </>

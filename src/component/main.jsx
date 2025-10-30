@@ -12,7 +12,7 @@ export default function Main() {
           atau ekspresi yang disusun dalam baris dan kolom membentuk suatu
           persegi panjang.
         </p>
-        <button>Start</button>
+        <button onClick={() => (location = "/soal-latihan1")}>Start</button>
       </div>
       <div className="container-canvas">
         <DarkTesseract />

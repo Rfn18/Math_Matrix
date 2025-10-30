@@ -265,6 +265,15 @@ main .canvas {
   gap: 2em;
 }
 
+.container-pembahasan3 {
+  display: grid;
+  grid-template-columns: 25% 30% 25%;
+  justify-content: center;
+  font-size: 18px;
+  width: 100%;
+  gap: 2em;
+}
+
 .step1-pembahasan1 {
   border-right: 2px solid #ddd;
 }
@@ -274,6 +283,24 @@ main .canvas {
 }
 
 .step3-pembahasan1 img {
+  width: 100%;
+  margin-top: 1em;
+  background-blend-mode: multiply;
+  border: 10px solid #141f35;
+  box-shadow: 10px 15px 34px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.step1-pembahasan3 {
+  border-right: 2px solid #ddd;
+}
+
+.step2-pembahasan3 {
+  border-right: 2px solid #ddd;
+}
+
+.step3-pembahasan3 img {
   width: 100%;
   margin-top: 1em;
   background-blend-mode: multiply;
@@ -313,4 +340,8 @@ main .canvas {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+mtd {
+  text-align: left;
 }

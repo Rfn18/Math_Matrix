@@ -3,7 +3,12 @@ export default function Header() {
     <>
       <header>
         <div className="container-text">
-          <h1>Math Matrix</h1>
+          <h1
+            onClick={() => (location = "/")}
+            style={{ cursor: "pointer", userSelect: "none" }}
+          >
+            Math Matrix
+          </h1>
           <ul>
             <li>home</li>
             <li>about</li>

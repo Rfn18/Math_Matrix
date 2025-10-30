@@ -14,6 +14,7 @@ import About from "./component/about.jsx";
 import Soal2 from "./page/latihan2/soal_latihan2.jsx";
 import Pembahasan2 from "./page/latihan2/pembahasan_latihan2.jsx";
 import Soal3 from "./page/latihan3/soal_latihan3.jsx";
+import Pembahasan3 from "./page/latihan3/pembahasan_latihan3.jsx";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const AppRoutes = createBrowserRouter([
   {
     path: "/soal-latihan3",
     element: <Soal3 />,
+  },
+  {
+    path: "/pembahasan-latihan3",
+    element: <Pembahasan3 />,
   },
 ]);
 

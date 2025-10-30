@@ -169,7 +169,11 @@ export default function Soal3() {
             </div>
           </div>
           <div className="container-image">
-            <img src="/image/1.png" alt="gambar-pabrik" id="image1" />
+            <img
+              src="/image/gambar-soal3.png"
+              alt="gambar-pabrik"
+              id="image1"
+            />
           </div>
         </div>
         <div className="soal3-footer">
