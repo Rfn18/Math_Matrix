@@ -63,7 +63,16 @@ export default function DarkTesseract() {
       />
       <pointLight position={[-5, 3, 5]} intensity={1} />
 
-      <Suspense fallback={null}>
+      <Suspense
+        fallback={
+          <Html>
+            <i
+              class="fa-solid fa-spinner fa-spin fa-4x"
+              style={{ opacity: ".8" }}
+            ></i>
+          </Html>
+        }
+      >
         <Model />
         <Environment preset="studio" />
       </Suspense>

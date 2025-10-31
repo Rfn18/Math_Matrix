@@ -58,6 +58,12 @@ header ul {
 
 header li {
   font-size: 20px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+header li:hover {
+  opacity: 0.8;
 }
 
 header li:nth-child(4) {
@@ -340,6 +346,15 @@ main .canvas {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.footer-btn {
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.footer-btn:hover {
+  scale: 0.95;
 }
 
 mtd {

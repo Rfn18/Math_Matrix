@@ -10,10 +10,10 @@ export default function Header() {
             Math Matrix
           </h1>
           <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>start</li>
+            <li onClick={() => (location = "/")}>home</li>
+            <li onClick={() => (location = "/about")}>about</li>
+            <li onClick={() => (location = "/contact")}>contact</li>
+            <li onClick={() => (location = "/soal-latihan1")}>start</li>
           </ul>
         </div>
         <hr />

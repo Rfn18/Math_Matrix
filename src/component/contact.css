@@ -1,24 +1,28 @@
-.tentang-page {
-  font-family: "Poppins", Arial, sans-serif;
+.hubungi-page,
+.hubungi-page body {
+  height: 100dvh;
   margin: 0;
   padding: 0;
-  background-color: #f4f6ff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: hsl(229, 100%, 98%);
   color: #333;
   overflow-x: hidden;
-  width: 100dvw;
 }
 
-.tentang-page .header-section {
+.hubungi-page .header-section {
   background: linear-gradient(135deg, #191b75, #454bff);
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 30px;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.tentang-page .header-section::before {
+.hubungi-page .header-section::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -30,7 +34,7 @@
     rgba(255, 255, 255, 0.15),
     transparent 70%
   );
-  animation: spin 10s linear infinite;
+  animation: spin 12s linear infinite;
   z-index: 0;
 }
 
@@ -38,141 +42,133 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.tentang-page .header-section h1 {
+.hubungi-page .header-section h1 {
   font-size: 3em;
   margin: 0;
   position: relative;
-  z-index: 2;
-  letter-spacing: 1px;
-  animation: fadeInDown 1s ease-out;
+  z-index: 1;
+  animation: fadeDown 1s ease;
 }
 
-.tentang-page .header-section p {
+.hubungi-page .header-section p {
   font-size: 1.2em;
   color: #e0e0ff;
   margin-top: 10px;
-  z-index: 2;
   position: relative;
-  animation: fadeInUp 1.2s ease-out;
+  z-index: 1;
+  animation: fadeUp 1.2s ease;
 }
 
-@keyframes fadeInDown {
+@keyframes fadeDown {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.tentang-page .container {
-  width: 85%;
-  margin: 50px auto;
-  overflow: hidden;
-  text-align: center;
+.hubungi-page .main-section {
+  flex: 1;
 }
 
-.tentang-page .about-section,
-.tentang-page .team-section {
+.hubungi-page .container {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hubungi-page .contact-brow {
   background: white;
-  margin-bottom: 20px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 400px;
 }
 
-.tentang-page .about-section h2,
-.tentang-page .team-section h2 {
+.hubungi-page .contact-brow h2 {
   color: #191b75;
   margin-bottom: 15px;
 }
 
-.tentang-page .about-section p {
-  line-height: 1.7;
-  text-align: justify;
+.hubungi-page .contact-brow p {
+  line-height: 1.6;
+  color: #555;
 }
 
-.tentang-page .members {
+.hubungi-page .medsos-brow {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  align-items: center;
+  margin: 15px 0;
+  gap: 15px;
 }
 
-.tentang-page .member {
-  text-align: center;
-  background-color: #f9f9ff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 250px;
+.hubungi-page .medsos-brow img {
+  width: 38px;
+  height: 38px;
+  filter: brightness(0) invert(0.2);
 }
 
-.tentang-page .member img {
-  border-radius: 10px;
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 10px;
-}
-
-.tentang-page .member h3 {
+.hubungi-page .medsos-brow p {
   color: #191b75;
-  margin-top: 5px;
+  font-weight: 500;
 }
 
-.tentang-page .footer-section {
+.hubungi-page .footer-section {
   text-align: center;
   padding: 20px 0;
   background-color: #191b75;
   color: white;
   width: 100%;
-  margin-top: 50px;
+  margin-top: auto;
 }
 
-.tentang-page .social-links {
+.hubungi-page .social-links {
   margin-top: 10px;
 }
 
-.tentang-page .social-links a {
+.hubungi-page .social-links a {
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 
-.tentang-page .social-links a img {
+.hubungi-page .social-links a img {
   width: 28px;
   height: 28px;
   filter: brightness(0) invert(1);
 }
 
-.tentang-page .social-links a:hover {
+.hubungi-page .social-links a:hover {
   transform: scale(1.2);
 }
 
-.tentang-page button {
-  justify-self: center;
+.hubungi-page button {
   background-color: #5409da;
   margin-top: 1em;
   border: none;
@@ -187,11 +183,11 @@
   -o-border-radius: 20px;
 }
 
-.tentang-page button {
+.hubungi-page button {
   cursor: pointer;
   transition: ease 0.3s;
 }
 
-.tentang-page button:hover {
+.hubungi-page button:hover {
   scale: 0.95;
 }

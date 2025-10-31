@@ -197,7 +197,12 @@ export default function Soal3() {
               </>
             )}
           </div>
-          <button>Next</button>
+          <button
+            className="footer-btn"
+            onClick={() => (location = "/pembahasan-latihan3")}
+          >
+            Next
+          </button>
         </div>
       </div>
     </>

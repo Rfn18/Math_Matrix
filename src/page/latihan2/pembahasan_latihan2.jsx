@@ -193,7 +193,12 @@ export default function Pembahasan2() {
             </>
           )}
         </div>
-        <button>Next</button>
+        <button
+          className="footer-btn"
+          onClick={() => (location = "/soal-latihan3")}
+        >
+          Next
+        </button>
       </div>
     </>
   );

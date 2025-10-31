@@ -518,7 +518,7 @@ Jadi, jawabannya adalah negatif tiga!`;
             </>
           )}
         </div>
-        <button>Next</button>
+        <button className="footer-btn">Next</button>
       </div>
     </>
   );

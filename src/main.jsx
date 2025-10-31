@@ -15,6 +15,8 @@ import Soal2 from "./page/latihan2/soal_latihan2.jsx";
 import Pembahasan2 from "./page/latihan2/pembahasan_latihan2.jsx";
 import Soal3 from "./page/latihan3/soal_latihan3.jsx";
 import Pembahasan3 from "./page/latihan3/pembahasan_latihan3.jsx";
+import Contact from "./component/contact.jsx";
+import Hasil from "./page/hasil.jsx";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -24,6 +26,10 @@ const AppRoutes = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
   {
     path: "/soal-latihan1",
@@ -48,6 +54,10 @@ const AppRoutes = createBrowserRouter([
   {
     path: "/pembahasan-latihan3",
     element: <Pembahasan3 />,
+  },
+  {
+    path: "/hasil",
+    element: <Hasil />,
   },
 ]);
 

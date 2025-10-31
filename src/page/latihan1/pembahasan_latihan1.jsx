@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "../../component/header";
 
 export default function Pembahasan1() {
-    const [suaraActive, setSuaraActive] = useState(true);
+  const [suaraActive, setSuaraActive] = useState(true);
   function handleSpeak() {
     const text = `Baik, kita mulai dari yang diketahui terlebih dahulu.
                   Diketahui, matriks B adalah:
@@ -46,120 +46,122 @@ export default function Pembahasan1() {
     }
   }
   return (
-  <>
-    <Header />
-    <h1 style={{justifySelf: "center", margin: ".5em 0"}}>Pembahasan Soal 1</h1>
-    <div className="container-pembahasan1">
-      <div className="step1-pembahasan1">
-        <p>Diketahui</p>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <mi>B</mi>
-              <mo>=</mo>
+    <>
+      <Header />
+      <h1 style={{ justifySelf: "center", margin: ".5em 0" }}>
+        Pembahasan Soal 1
+      </h1>
+      <div className="container-pembahasan1">
+        <div className="step1-pembahasan1">
+          <p>Diketahui</p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>B</mi>
+            <mo>=</mo>
+            <mrow>
+              <mo>[</mo>
+              <mtable rowspacing="4pt" columnspacing="1em">
+                <mtr>
+                  <mtd>
+                    <mn>3</mn>
+                  </mtd>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mo>&#x2212;</mo>
+                    <mn>2</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+          </math>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
               <mrow>
-                <mo>[</mo>
-                <mtable rowspacing="4pt" columnspacing="1em">
-                  <mtr>
-                    <mtd>
-                      <mn>3</mn>
-                    </mtd>
-                    <mtd>
-                      <mo>&#x2212;</mo>
-                      <mn>1</mn>
-                    </mtd>
-                  </mtr>
-                  <mtr>
-                    <mtd>
-                      <mo>&#x2212;</mo>
-                      <mn>2</mn>
-                    </mtd>
-                    <mtd>
-                      <mn>1</mn>
-                    </mtd>
-                  </mtr>
-                </mtable>
-                <mo>]</mo>
-              </mrow>
-            </math>
-             <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <msup>
+                <mo>(</mo>
                 <mrow>
-                  <mo>(</mo>
-                  <mrow>
-                    <mi>B</mi>
-                    <msup>
-                      <mi>A</mi>
-                      <mrow class="MJX-TeXAtom-ORD">
-                        <mo>&#x2212;</mo>
-                        <mn>1</mn>
-                      </mrow>
-                    </msup>
-                  </mrow>
-                  <mo>)</mo>
-                </mrow>
-                <mrow class="MJX-TeXAtom-ORD">
-                  <mo>&#x2212;</mo>
-                  <mn>1</mn>
-                </mrow>
-              </msup>
-              <mo>=</mo>
-               <mrow>
-                <mo>[</mo>
-                <mtable rowspacing="4pt" columnspacing="2em">
-                  <mtr>
-                    <mtd>
-                      <mn>2</mn>
-                    </mtd>
-                    <mtd>
+                  <mi>B</mi>
+                  <msup>
+                    <mi>A</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#x2212;</mo>
                       <mn>1</mn>
-                    </mtd>
-                  </mtr>
-                  <mtr>
-                    <mtd>
-                      <mn>4</mn>
-                    </mtd>
-                    <mtd>
-                      <mn>3</mn>
-                    </mtd>
-                  </mtr>
-                </mtable>
-                <mo>]</mo>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
               </mrow>
-            </math>
-      </div>
-      <div className="step2-pembahasan1">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>=</mo>
+            <mrow>
+              <mo>[</mo>
+              <mtable rowspacing="4pt" columnspacing="2em">
+                <mtr>
+                  <mtd>
+                    <mn>2</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>4</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>3</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>]</mo>
+            </mrow>
+          </math>
+        </div>
+        <div className="step2-pembahasan1">
           <p>Dengan bantuan sifat invers matriks</p>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msup>
-    <mrow>
-      <mo>(</mo>
-      <mrow>
-        <mi>A</mi>
-        <mo>&#x22C5;</mo>
-        <mi>B</mi>
-      </mrow>
-      <mo>)</mo>
-    </mrow>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x2212;</mo>
-      <mn>1</mn>
-    </mrow>
-  </msup>
-  <mo>=</mo>
-  <msup>
-    <mi>B</mi>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x2212;</mo>
-      <mn>1</mn>
-    </mrow>
-  </msup>
-  <mo>&#x22C5;</mo>
-  <msup>
-    <mi>A</mi>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x2212;</mo>
-      <mn>1</mn>
-    </mrow>
-  </msup>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>&#x22C5;</mo>
+                  <mi>B</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>=</mo>
+            <msup>
+              <mi>B</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>&#x22C5;</mo>
+            <msup>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
           </math>
           <p>dan</p>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -183,35 +185,40 @@ export default function Pembahasan1() {
             <mo>=</mo>
             <mi>A</mi>
           </math>
-      </div>
-      <div className="step3-pembahasan1">
+        </div>
+        <div className="step3-pembahasan1">
           <p>dapat kita peroleh</p>
           <img src="/image/Pembahasan-1.png" alt="img" />
+        </div>
       </div>
-    </div>
-    <div className="pembahasan1-footer">
-          <div className="pause-auto-speech">
-            {suaraActive === false ? (
-              <>
-                <i
-                  class="fa-solid fa-pause"
-                  id="pause"
-                  onClick={() => {
-                    speechSynthesis.cancel();
-                    setSuaraActive(true);
-                  }}
-                ></i>
-                <p>text to speech is running!</p>
-              </>
-            ) : (
-              <>
-                <i class="fa-solid fa-play" id="play" onClick={handleSpeak}></i>
-                <p>Play Text To Speech!</p>
-              </>
-            )}
-          </div>
-          <button>Next</button>
-    </div>
-  </>
+      <div className="pembahasan1-footer">
+        <div className="pause-auto-speech">
+          {suaraActive === false ? (
+            <>
+              <i
+                class="fa-solid fa-pause"
+                id="pause"
+                onClick={() => {
+                  speechSynthesis.cancel();
+                  setSuaraActive(true);
+                }}
+              ></i>
+              <p>text to speech is running!</p>
+            </>
+          ) : (
+            <>
+              <i class="fa-solid fa-play" id="play" onClick={handleSpeak}></i>
+              <p>Play Text To Speech!</p>
+            </>
+          )}
+        </div>
+        <button
+          className="footer-btn"
+          onClick={() => (location = "/soal-latihan2")}
+        >
+          Next
+        </button>
+      </div>
+    </>
   );
 }
